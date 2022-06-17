@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*
+© Copyright 2020 by Vladislav Zhylenko
+** - Default CSS
+** - Form Area
+** - Result Area
+*/
+/*================================================
+Default CSS
+=================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+}
+
+*::selection {
+  background: #464451;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  outline: 0 !important;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  outline: 0 !important;
+}
+
+input {
+  outline: none;
+}
+
+/*================================================
+Form Area
+=================================================*/
+.form-area{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.form-area .form-block{
+  width: 90%;
+  max-width: 400px;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-area .form-block form{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Calibri";
+}
+
+.form-area .form-block form input{
+  width: calc(100% - 10px);
+  font-size: 20px;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.form-area .form-block form input[type="checkbox"]{
+  width: auto;
+  display: inline;
+}
+
+.form-area .form-block form label{
+  font-family: "Calibri";
+  font-size: 20px;
+}
+
+/*================================================
+Result Area
+=================================================*/
+.result-area{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-family: "Calibri";
+}
+
+.result-area .result-block{
+  position: relative;
+  width: 90%;
+  max-width: 750px;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.result-area .result-block table{
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+}
